@@ -1,0 +1,19 @@
+<h4>Stock</h4>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Book Id</th>
+            <th>Number</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="entry in stock">
+            <td>{{entry._bookId}}</td>
+            <td>{{entry.number}}</td>
+            <td>
+                <a class="text-info" ui-sref="editStock({id: entry._bookId})"><i class="glyphicon glyphicon-pencil"></i> Edit</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

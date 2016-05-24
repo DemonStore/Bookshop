@@ -1,0 +1,16 @@
+{
+  "name": "bookshop",
+  "version": "1.0.0",
+  "description": "Course work\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C",
+  "main": "app.js",
+  "dependencies": {
+    "mongoose": "^4.4.17",
+    "slimple": "^0.6.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

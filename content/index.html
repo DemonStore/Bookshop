@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="booksShopApp">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bookshop</title>
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" ui-sref="books">Bookshop</a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a ui-sref="books">Books</a></li>
+						<li><a ui-sref="price">Prices</a></li>
+						<li><a ui-sref="stock">Stock</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+	    </nav>
+	</header>
+
+	<main>
+		<div class="container">
+			<div class="row">
+			    <div class="col-md-9">
+					<div ui-view></div>
+			    </div>
+			    <div class="col-md-3">
+			        <aside>
+			            <div class="panel panel-primary">
+			                <div class="panel-heading">
+			                    <h3 class="panel-title"><i class="glyphicon glyphicon-shopping-cart"></i> Cart</h3>
+			                </div>
+			                <div class="panel-body">
+			                    Empty
+			                </div>
+			            </div>
+			        </aside>
+			    </div>
+			</div>
+
+		</div>
+	</main>
+
+	<footer>
+
+	</footer>
+	<script src="/lib/jquery-2.2.3.min.js"></script>
+	<script src="/lib/bootstrap.min.js"></script>
+	<script src="/lib/angular.min.js"></script>
+	<script src="/js/app.js"></script>
+	<script src="/js/controllers.js"></script>
+	<script src="/js/services.js"></script>
+	<script src="/lib/angular-ui-router.min.js"></script>
+	<script src="/lib/angular-resource.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<h4>Prices</h4>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Book Id</th>
+            <th>Price</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="price in prices">
+            <td>{{price._bookId}}</td>
+            <td>{{price.price}}</td>
+            <td>
+                <a class="text-info" ui-sref="editPrice({id: price._bookId})"><i class="glyphicon glyphicon-pencil"></i> Edit</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

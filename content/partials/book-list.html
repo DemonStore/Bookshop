@@ -1,0 +1,33 @@
+<div class="clearfix">
+    <div class="pull-left">
+        <h4>Books</h4>
+    </div>
+    <div class="pull-right">
+        <a ui-sref="newBook" class="btn btn-primary">Add New Book</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4" ng-repeat="book in books">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <a ui-sref="viewBook({id:book._id})">{{book.title}}</a>
+                </h3>
+            </div>
+            <div class="panel-body">
+                <p>{{book.description}}</p>
+                <p class="text-info" ng-show="book.price">Price: <b>{{book.price}}</b>$</p>
+                <p class="text-info" ng-show="book.stock">In stock: <b>{{book.stock}}</b></p>
+            </div>
+            <div class="panel-footer clearfix">
+                <div class="pull-left">
+                    <a class="text-info" ui-sref="editBook({id:book._id})"><i class="glyphicon glyphicon-pencil"></i> Edit</a>
+                </div>
+                <div class="pull-right">
+                    <a class="text-danger" ng-click="deleteBook(book)"><i class="glyphicon glyphicon-trash"></i> Remove</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
